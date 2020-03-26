@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-<div class="custom-padding">
+<div class="custom-padding" style="-webkit-user-drag: auto">
     <nav>
-        <div class="logo" > <img src="faceeeee.png" style = "width:90px;height: 60px"></div>
-        <ul class ="menu-area">
+        <div class="logo"><img src="faceeeee.png" style="width:90px;height: 60px"></div>
+        <ul class="menu-area">
             <li><a href="#about">About Me</a></li>
             <li><a href="#photos">My Photos</a></li>
             <li><a href="#playlist">My Playlist</a></li>
@@ -28,8 +28,11 @@
     <br/>
     <br/>
     <div class="sectionhead">About me</div>
-    <div class="desc"> my name is Itamar Sigel i grew up in Kiryat-Haim which located next to Haifa city, i'm 26 years old ,i study system engineering in Ben-Gurion University in Beer-Sheva
-    i love to watch the tv , play the guitar and hangout with friends and im sick and tierd of this Corona Virus! please , make it stop.</div>
+    <div class="desc"> my name is Itamar Sigel i grew up in Kiryat-Haim which located next to Haifa city, i'm 26 years
+        old ,i study system engineering in Ben-Gurion University in Beer-Sheva
+        i love to watch the tv , play the guitar and hangout with friends and im sick and tierd of this Corona Virus!
+        please , make it stop.
+    </div>
 
     <br/>
     <br/>
@@ -55,7 +58,8 @@
 
     <br/>
     <div class="sectionhead">My playlist</div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lRaXPHFEbKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lRaXPHFEbKA" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br/>
     <br/>
 </section>
@@ -64,7 +68,9 @@
     <br/>
     <br/>
     <div class="sectionhead"> Give me a like</div>
-    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A63342%2Funtitled%2FwebSite.html%3F_ijt%3Dk41dujqu3ef46t087ftpos845&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=116168818291" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A63342%2Funtitled%2FwebSite.html%3F_ijt%3Dk41dujqu3ef46t087ftpos845&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=116168818291"
+            width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowTransparency="true" allow="encrypted-media"></iframe>
 
     <br/>
     <br/>
@@ -77,7 +83,7 @@
     <br/>
     <br/>
     <br/>
-    <div class="sectionhead">  Scan my code</div>
+    <div class="sectionhead"> Scan my code</div>
     <img src="frame.png">
     <br/>
     <br/>
@@ -85,12 +91,11 @@
 </section>
 
 
-
-    <br/>
-    <div class="sectionhead"> Q&A</div>
-    <br/>
-    <br/>
-    <br/>
+<br/>
+<div class="sectionhead"> Q&A</div>
+<br/>
+<br/>
+<br/>
 </section>
 
 <section id="contact" class="section">
@@ -124,16 +129,16 @@
 
 
 <script type="text/javascript">
-    $(function(){
-        $("#nav a").click(function(e){
+    $(function () {
+        $("#nav a").click(function (e) {
             e.preventDefault();
-            $('html,body').scrollTo(this.hash,this.hash);
+            $('html,body').scrollTo(this.hash, this.hash);
         });
     });
 </script>
 <script type="text/javascript">
-    $(document).scroll(function() {
-        $('#menu').toggle($(this).scrollTop()>1000)
+    $(document).scroll(function () {
+        $('#menu').toggle($(this).scrollTop() > 1000)
     });​
 </script>
 </body>
