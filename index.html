@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:height="http://www.w3.org/1999/xhtml" xmlns:font-family="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -27,7 +27,7 @@
     <br/>
     <br/>
     <br/>
-    <div class="sectionhead">About me</div>
+    <div class="sectionhead">About me <span style='font-size:50px;'>&#129415;</span></div>
     <div class="desc"> my name is Itamar Sigel i grew up in Kiryat-Haim which located next to Haifa city, i'm 26 years
         old ,i study system engineering in Ben-Gurion University in Beer-Sheva
         i love to watch the tv , play the guitar and hangout with friends and im sick and tierd of this Corona Virus!
@@ -42,7 +42,7 @@
 
 
     <br/>
-    <div class="sectionhead">My photos</div>
+    <div class="sectionhead">My photos <span style='font-size:50px;'>&#129331;</span></div>
     <img src="20160420_001706.jpg" style="width:350px;height:200px;">
     <img src="20160508_145011.jpg" style="width:350px;height:200px;">
     <img src="20160509_190206.jpg" style="width:350px;height:200px;">
@@ -57,9 +57,10 @@
 <section id="playlist" class="section">
 
     <br/>
-    <div class="sectionhead">My playlist</div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lRaXPHFEbKA" frameborder="0"
+    <div class="sectionhead">My playlist <span style='font-size:50px;'>&#128266;</span><span style='font-size:50px;'>&#128066;</span> <br/><br/>
+    <iframe width="560"  height="315" src="https://www.youtube.com/embed/lRaXPHFEbKA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <br/>
     <br/>
 </section>
@@ -67,11 +68,11 @@
 <section id="like" class="section">
     <br/>
     <br/>
-    <div class="sectionhead"> Give me a like</div>
+    <div class="sectionhead"> Give me a like<span style='font-size:50px;'>&#129297;</span> <br/><br/>
     <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A63342%2Funtitled%2FwebSite.html%3F_ijt%3Dk41dujqu3ef46t087ftpos845&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=116168818291"
             width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allow="encrypted-media"></iframe>
-
+    </div>
     <br/>
     <br/>
     <br/>
@@ -83,8 +84,11 @@
     <br/>
     <br/>
     <br/>
-    <div class="sectionhead"> Scan my code</div>
-    <img src="frame.png">
+    <div style="text-align: center" class="sectionhead"> Scan my code
+        <br/>
+        <br/>
+        <img src="frame.png">
+    </div>
     <br/>
     <br/>
     <br/>
@@ -100,34 +104,53 @@
 
 <section id="contact" class="section">
 
-    <div class="sectionhead">Contact me</div>
-    <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
-        Name:<br>
-        <input type="text" name="name"><br>
-        E-mail:<br>
-        <input type="text" name="mail"><br>
-        Comment:<br>
-        <input type="text" name="comment" size="50"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
+    <div class="sectionhead">Contact me  <img src="gmail-logo-5806b2d35f9b5805c2886021.png" style="width:50px;height:50px;"> </div>
+    <form   id="mail" action="MAILTO:zigelitamar@gmail.com" method="get" enctype="text/plain">
+        <div class ="desc">
+            Subject:<br>
+            <input type="text"  name="subject"><br>
+            E-mail:<br>
+            <input type="text" name="cc"><br>
+            Comment:<br>
+            <textarea id="fbody" name="body" maxlength="256"></textarea><br><br>
+            <input type="submit" value="Send" onclick="addEmoji()" style="font-family: 'Squada One', cursive;">
+            <input type="reset" value="Reset" style="font-family: 'Squada One', cursive;">
+            <br/>
+
+            <label class="desc" >Choose an emoji:</label>
+            <select id="emo" name="Emojilist" onclick="add()" form="mail" size="1">
+                <option value="&#127825">&#127825</option>
+                <option value="&#127828">&#127828</option>
+                <option value="&#128131">&#128131</option>
+                <option value="&#128137">&#128137</option>
+                <option value="&#128526">&#128526</option>
+                <option value="&#128536">&#128536</option>
+            </select>
 
 
-        <p>
-            &#128579
-            ₪#128536
-            &#128041
-
-        </p>
-        <p>
-
-        </p>
+        </div>
     </form>
     <br/>
     <br/>
     <br/>
 </section>
 
+<script>
+    function getRadioVal()
+    {
+        var e = document.getElementById("emo");
+        var strUser = e.options[e.selectedIndex].value;
+        return strUser;
+    }
 
+    function addEmoji()
+    {
+
+        var val = " "+getRadioVal();
+        document.getElementById('fbody').value += val;
+
+    }
+</script>
 <script type="text/javascript">
     $(function () {
         $("#nav a").click(function (e) {
