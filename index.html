@@ -118,7 +118,7 @@
             <br/>
 
             <label class="desc" >Choose an emoji:</label>
-            <select id="emo" name="Emojilist" onclick="add()" form="mail" size="1">
+            <select id="emo" name="Emojilist" form="mail" size="1">
                 <option value="&#127825">&#127825</option>
                 <option value="&#127828">&#127828</option>
                 <option value="&#128131">&#128131</option>
@@ -136,7 +136,7 @@
 </section>
 
 <script>
-    function getRadioVal()
+    function getVal()
     {
         var e = document.getElementById("emo");
         var strUser = e.options[e.selectedIndex].value;
@@ -146,7 +146,7 @@
     function addEmoji()
     {
 
-        var val = " "+getRadioVal();
+        var val = " " + getVal();
         document.getElementById('fbody').value += val;
 
     }
