@@ -6,9 +6,21 @@
 	box-sizing: border-box;
 }
 body{
-
+	background: repeating-linear-gradient(
+			to right,
+			black,
+			black 10px,
+			lightslategrey 10px,
+			lightslategrey 20px
+	);
 }
-
+section{
+	max-width:1000px;
+	margin: 100px;
+	border-spacing: 15px;
+	background: lightslategrey;
+	border:5px solid black;
+}
 .menu-area li a{
 	text-transform: uppercase;
 	font-family: 'Squada One', cursive;
@@ -45,10 +57,12 @@ body{
 
 }
 .custom-padding{
+
 	padding-top: 25px;
 
 }
 nav{
+	border:1px solid black;
 	position: relative;
 	padding: 10px 20px 10px 10px;
 	text-align:  right;
@@ -91,8 +105,11 @@ nav:before{
 	right: 0;
 }
 .sectionhead{
+
+
 	 font-style: italic;
-	 font-family: 'Squada One', cursive;
+
+	 font-family: 'Squada One', Impact;
 	 text-transform: uppercase;
 	 font-size: 40px;
 	 text-align: center;
