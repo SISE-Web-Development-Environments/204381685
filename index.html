@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-<div class="custom-padding" style="-webkit-user-drag: auto">
-    <nav>
+<div class="custom-padding" style="-webkit-user-drag: auto" id="menu2">
+    <nav id="menu">
         <div class="logo"><img src="faceeeee.png" style="width:90px;height: 60px"></div>
         <ul class="menu-area">
             <li><a href="#about">About Me</a></li>
@@ -79,9 +79,21 @@
 </section>
 
 
-<br/>
+<section id ="spa" class ="section">
 <div class="sectionhead"> Q&A</div>
-<br/>
+
+    <div class ="desc" style = "margin: 30px"><p style="text-align: center"><strong style="text-align: center">3 Main Differences between WEB 1.0/2.0/3.0: </strong></p>
+    </br>
+        <p>1.WEB 1.0 was originated for information share with limited interaction between the sites, static. information brought to users passively without the option to interact with the sites.</p>  </br>
+        <p>2.WEB 2.0 let the users not only read information but also write and interact with the site , encouraging collaboration between users like twitter,mySpace etc.</p> </br>
+        <p>3.WEB 3.0 relates to a semantic matter , about  computers interactions . interpreting human behavior and understand them , for example recommendation systems for shopping sites based on user specific needs.</p></br>
+        <p style="text-align: center"><strong style="text-align: center">Use-Case example: </strong></p>
+        <p>for example , lets look at a case where a user types a query "Restaurants in NYC"</br>
+        at WEB 3.0 results will be based on the query keywords but will also use the users previous searches and preferences to help bring out better results , for example, if the user is a big thai-food fan ,thai restaurants might be the first results
+        while on WEB 2.0 results are more likely to be bases solly on the the query itself .</p>
+
+    </div>
+
 <br/>
 <br/>
 </section>
@@ -89,7 +101,7 @@
 <section id="contact" class="section">
 
     <div class="sectionhead">Contact me  <img src="gmail-logo-5806b2d35f9b5805c2886021.png" style="width:50px;height:50px;"> </div>
-    <form   id="mail" action="MAILTO:zigelitamar@gmail.com" method="get" enctype="text/plain">
+    <form   id="mail" action="MAILTO:zigelitamar@gmail.com" method="get" enctype="text/plain" style="text-align: center">
         <div class ="desc">
             Subject:<br>
             <input type="text"  name="subject"><br>
@@ -145,8 +157,8 @@
 </script>
 <script type="text/javascript">
     $(document).scroll(function () {
-        $('#custom-padding').toggle($(this).scrollTop() > 1000)
-    })
+        $('#menu').toggle($(this).scrollTop() > 1000)
+    });
 </script>
 </body>
 </html>
